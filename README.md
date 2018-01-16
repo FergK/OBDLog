@@ -14,23 +14,23 @@ I ran this on a Raspberry Pi Model 3 and used a SparkFun OBD-II UART. A full par
 
 ## Slides
 
-https://github.com/FergK/OBDLog/raw/master/slides/01.png
-https://github.com/FergK/OBDLog/raw/master/slides/02.png
-https://github.com/FergK/OBDLog/raw/master/slides/03.png
-https://github.com/FergK/OBDLog/raw/master/slides/04.png
-https://github.com/FergK/OBDLog/raw/master/slides/05.png
-https://github.com/FergK/OBDLog/raw/master/slides/06.png
-https://github.com/FergK/OBDLog/raw/master/slides/07.png
-https://github.com/FergK/OBDLog/raw/master/slides/08.png
-https://github.com/FergK/OBDLog/raw/master/slides/09.png
-https://github.com/FergK/OBDLog/raw/master/slides/10.png
-https://github.com/FergK/OBDLog/raw/master/slides/11.png
-https://github.com/FergK/OBDLog/raw/master/slides/12.png
-https://github.com/FergK/OBDLog/raw/master/slides/13.png
-https://github.com/FergK/OBDLog/raw/master/slides/14.png
-https://github.com/FergK/OBDLog/raw/master/slides/15.png
-https://github.com/FergK/OBDLog/raw/master/slides/16.png
-https://github.com/FergK/OBDLog/raw/master/slides/17.png
-https://github.com/FergK/OBDLog/raw/master/slides/18.png
-https://github.com/FergK/OBDLog/raw/master/slides/19.png
-https://github.com/FergK/OBDLog/raw/master/slides/20.png
+![Slide 01](https://github.com/FergK/OBDLog/raw/master/slides/01.png)
+![Slide 02](https://github.com/FergK/OBDLog/raw/master/slides/02.png)
+![Slide 03](https://github.com/FergK/OBDLog/raw/master/slides/03.png)
+![Slide 04](https://github.com/FergK/OBDLog/raw/master/slides/04.png)
+![Slide 05](https://github.com/FergK/OBDLog/raw/master/slides/05.png)
+![Slide 06](https://github.com/FergK/OBDLog/raw/master/slides/06.png)
+![Slide 07](https://github.com/FergK/OBDLog/raw/master/slides/07.png)
+![Slide 08](https://github.com/FergK/OBDLog/raw/master/slides/08.png)
+![Slide 09](https://github.com/FergK/OBDLog/raw/master/slides/09.png)
+![Slide 10](https://github.com/FergK/OBDLog/raw/master/slides/10.png)
+![Slide 11](https://github.com/FergK/OBDLog/raw/master/slides/11.png)
+![Slide 12](https://github.com/FergK/OBDLog/raw/master/slides/12.png)
+![Slide 13](https://github.com/FergK/OBDLog/raw/master/slides/13.png)
+![Slide 14](https://github.com/FergK/OBDLog/raw/master/slides/14.png)
+![Slide 15](https://github.com/FergK/OBDLog/raw/master/slides/15.png)
+![Slide 16](https://github.com/FergK/OBDLog/raw/master/slides/16.png)
+![Slide 17](https://github.com/FergK/OBDLog/raw/master/slides/17.png)
+![Slide 18](https://github.com/FergK/OBDLog/raw/master/slides/18.png)
+![Slide 19](https://github.com/FergK/OBDLog/raw/master/slides/19.png)
+![Slide 20](https://github.com/FergK/OBDLog/raw/master/slides/20.png)
