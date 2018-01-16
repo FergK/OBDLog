@@ -15,7 +15,6 @@ I ran this on a Raspberry Pi Model 3 and used a SparkFun OBD-II UART. A full par
 ## Slides
 
 ![Slide 01](https://github.com/FergK/OBDLog/raw/master/slides/01.png)
-![Slide 02](https://github.com/FergK/OBDLog/raw/master/slides/02.png)
 ![Slide 03](https://github.com/FergK/OBDLog/raw/master/slides/03.png)
 ![Slide 04](https://github.com/FergK/OBDLog/raw/master/slides/04.png)
 ![Slide 05](https://github.com/FergK/OBDLog/raw/master/slides/05.png)
