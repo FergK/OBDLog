@@ -1,0 +1,152 @@
+<!-- Fergus Kelley
+CSC 4410 Embedded Systems
+
+Car Telemetry Project
+OBDLogNet
+This is a frontend for OBDLog, using Node.js
+
+All code by Fergus Kelley, except where otherwise stated -->
+
+<!doctype html>
+<html>
+<head>
+    <title>OBDLogNet</title>
+    
+    <!-- Fetch JQuery from the CDN -->
+    <script
+        src="https://code.jquery.com/jquery-3.1.0.min.js"
+        integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+        crossorigin="anonymous"></script>
+
+    <!-- Fetch socket.io from the CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.min.js"></script>
+    
+    <!-- Setup socket.io and some jQuery handlers -->
+    <script>
+        var socket = io();
+
+        socket.on('parsedData', function(msg){
+            $('#dataBox').html(msg);
+        });
+
+        socket.on('rawData', function(msg){
+            $('#rawBox').append(msg + '<br/>');
+            $('#rawBox').scrollTop( Number.POSITIVE_INFINITY );
+        });
+
+    </script>
+        
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto+Slab" rel="stylesheet">
+    
+    <!-- CSS -->
+    <style type="text/css">
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Roboto Slab', serif;
+            color: white;
+            margin: 3px;
+            padding: 0px;
+            background-color: #2C3654;
+        }
+
+        button, label {
+            font-family: 'Noto Sans', sans-serif;
+            /*font-weight: bold;*/
+            font-size: 16px;
+            color: black;
+            border: 0px;
+            background-color: #E07C57;
+            box-shadow: 2px 2px 6px 0px #3D2C3B;
+            margin: 2px 1px;
+            padding: 3px 12px;
+        }
+
+        input[type="checkbox"] {
+            margin: 0px 12px 0px 0px;
+            padding: 0px;
+            position: relative;
+            top: 3px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .box {
+            color: black;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            margin: 0px 0px 4px 0px;
+            padding: 6px 8px;
+            background-color: #fcfcfc;
+            text-align: center;
+        }
+
+        #buttonsBox {
+            
+        }
+
+        #dataBox {
+            max-height: 500px;
+            overflow: auto;
+        }
+
+        #rawBox {
+            max-height: 200px;
+            overflow: auto;
+            text-align: left;
+        }
+
+        .dataName {
+            font-size: 20px;
+            margin: 0px auto;
+        }
+
+        .dataValue {
+            font-size: 64px;
+            margin: 0px auto;
+        }
+
+        .dataUnit {
+            font-size: 20px;
+            font-style: italic;
+            margin: 0px auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="flex">
+            <div class="box" id="buttonsBox">
+                <button onclick="socket.emit('log', 'rpm');">RPM</button>
+                <button onclick="socket.emit('log', 'speed');">Speed</button>
+                <button onclick="socket.emit('log', 'temp');">Temp</button>
+                <button onclick="socket.emit('stopLog', '');">Stop</button>
+                <label id="rawCheckboxLabel"><input type="checkbox" id="rawCheckbox">Show raw data</label>
+            </div>
+            <div class="box" id="dataBox"></div>
+            <div class="box" id="rawBox"></div>
+            <div class="box" id="infoBox">
+                Car Telemetry Project
+                <!-- TODO: Add all the info here -->
+            </div>
+        </div>
+    </div>
+    <script>
+        $( '#rawBox' ).hide();
+        $( '#rawCheckbox' ).prop( "checked", false );
+
+        $('#rawCheckbox').change(function() {
+            if ( $( '#rawCheckbox' ).prop( "checked") ) {
+                $( '#rawBox' ).show();
+            } else {
+                $( '#rawBox' ).hide();
+            }
+        });
+    </script>
+</body>
+</html>

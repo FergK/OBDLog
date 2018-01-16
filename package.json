@@ -1,0 +1,9 @@
+{
+  "name": "OBDLogNet",
+  "version": "1.0.0",
+  "description": "Fergus Kelley's Car Telemetry Project",
+  "dependencies": {
+    "express": "^4.15.2",
+    "socket.io": "^1.7.3"
+  }
+}
